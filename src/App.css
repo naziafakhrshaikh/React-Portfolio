@@ -1,5 +1,5 @@
 body{
-  background-image: url('background2.webp');
+ background-image: url('/background2.webp');
   background-size: cover;       /* image covers entire screen */
   background-repeat: no-repeat; /* image doesn’t repeat */
   background-attachment: fixed; /* optional: keeps image still when scrolling */
@@ -17,3 +17,52 @@ body{
   font-family: 'Times New Roman', Times, serif;
 }
     
+/* style of link buttons. */
+ /* Link buttons for About Me, Conatact me, My work, My Story */
+.links-button{
+padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  /* color of the text on the button */
+  color: #7a5c2e;
+  /* background color */
+  background: linear-gradient(#ccb085, #d0b693, #d3bb91, #ecdcb5, #a9732fec);
+   border-top: 2px solid #8f6b32;
+  transition: 0.2s ease-in-out;
+  min-width: 120px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Hover effect */
+.links-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #c5a572, #7a5c2e);
+}
+/* end of buttons style */
+
+/* Using flex-box to center the main text in the center of the screen. */
+.main { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+  }
+
+   /* Container with all the links */
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Mobile-friendly Responsive layout.*/
+/* for small screen. i,e phone */
+@media screen and (min-width: 600px) {
+  .main {
+    gap: 26px;
+    padding: 18px;
+  }
+ }

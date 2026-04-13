@@ -19,3 +19,15 @@ footer i {
   margin-right: 4px;
 }
 /* end of footer style.  */
+/* Footer style */
+footer { 
+  /* color of the text on the button */
+  color: #7a5c2e;
+  /* background color */
+  background: linear-gradient(#ccb085, #d0b693, #d3bb91, #ecdcb5, #a9732fec);
+   border-top: 2px solid #8f6b32;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 14px;
+ 
+}

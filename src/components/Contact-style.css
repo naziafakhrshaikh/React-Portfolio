@@ -2,7 +2,6 @@
 
 /* This container contains input placeholder for name, number, email and message.  */
 .contact-container {
-  
     background: linear-gradient(#ccb085, #d0b693, #d3bb91, #ecdcb5, #a9732fec);
     display: flex;
     flex-direction: column;
@@ -14,6 +13,7 @@
     margin: 0 auto;
     min-height: 92px;
 }  
+
 /* The Contact Me line. should be rustic gold */
 .contact-container h1 {
   font-size: 2rem;
@@ -32,9 +32,7 @@ textarea {
     width: 100%;
     /* color of the text on the button */
     color: #7a5c2e;
-   /* background color */
-   /* background: linear-gradient(#ccb085, #d0b693, #d3bb91, #ecdcb5, #a9732fec); */
-   background-image: url(background2.webp);
+    background-image: url(background2.webp);
    border: 2px solid #8f6b32;
 }
 
@@ -76,6 +74,7 @@ textarea {
   margin-bottom: 25px;
   font-size: 1rem;
 }
+
 /* the buttons to the contact links. */
 /* Button container */
 .contact-btnContainer {

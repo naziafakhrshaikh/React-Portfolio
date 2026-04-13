@@ -14,15 +14,8 @@ function HeroIntro() {
           This portfolio showcases my learning journey, the projects I've worked on, and the progress I continue to make as I grow in the tech field.
           Feel free to explore my background, view my work, or reach out — I'd love to connect and keep learning.
         </h2>
-        {/* <br />
-        <div className="links-container">
-          <a href="/aboutme" className="links-button About">About Me</a>
-          <a href="/contact" className="links-button Contact">Contact Me</a>
-          <a href="/projects" className="links-button Work">My Work</a>
-        </div> */}
-      </section>
+        </section>
     </>
   )
 }
-
 export default HeroIntro
