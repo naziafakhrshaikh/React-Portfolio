@@ -1,0 +1,19 @@
+body{
+  background-image: url('background2.webp');
+  background-size: cover;       /* image covers entire screen */
+  background-repeat: no-repeat; /* image doesn’t repeat */
+  background-attachment: fixed; /* optional: keeps image still when scrolling */
+  background-position: center;  /* centers the image */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  color: #7a5c2e; /* rustic gold heading */
+}
+
+.section-title {
+  text-align: center;
+  color: #7a5c2e;
+  font-size: 2rem;
+  margin: 20px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+    

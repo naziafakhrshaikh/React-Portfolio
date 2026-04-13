@@ -1,0 +1,75 @@
+/* style code for index.html */
+
+
+/* Using flex-box to center the main text in the center of the screen. */
+.main { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+  }
+  /* introduction */
+  .main h3{
+    color: linear-gradient(135deg, #c5a572, #7a5c2e);
+  }
+
+  /* Container with all the links */
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* style of link buttons. */
+ /* Link buttons for About Me, Conatact me, My work, My Story */
+.links-button{
+padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  /* color of the text on the button */
+  color: #7a5c2e;
+  /* background color */
+  background: linear-gradient(#ccb085, #d0b693, #d3bb91, #ecdcb5, #a9732fec);
+   border-top: 2px solid #8f6b32;
+  transition: 0.2s ease-in-out;
+  min-width: 120px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Hover effect */
+.contact-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #c5a572, #7a5c2e);
+}
+/* end of buttons style */
+
+/* Footer style */
+footer { 
+  /* color of the text on the button */
+  color: #7a5c2e;
+  /* background color */
+  background: linear-gradient(#ccb085, #d0b693, #d3bb91, #ecdcb5, #a9732fec);
+   border-top: 2px solid #8f6b32;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 14px;
+ 
+}
+
+/* Mobile-friendly Responsive layout.*/
+/* for small screen. i,e phone */
+@media screen and (min-width: 600px) {
+  .main {
+    gap: 26px;
+    padding: 18px;
+  }
+ 
+  .links-container {
+    /* max-width: 260px; */
+    /* min-height: 260px; */
+  }
+
+}

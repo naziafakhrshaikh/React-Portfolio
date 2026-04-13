@@ -1,0 +1,21 @@
+/* Nazia Shaikh. All right reserverd line. */
+footer p {
+  margin: 6px 0;
+}
+
+footer a {
+  /* font color */
+  color: #7a5c2e; 
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 17px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer i {
+  margin-right: 4px;
+}
+/* end of footer style.  */

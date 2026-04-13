@@ -1,0 +1,56 @@
+/* style sheet for Projects.html */
+
+.MyWorkContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;  /* increased spacing so cards dont overlap */
+  padding: 20px;
+  justify-items: center; /* centers cards in their cells */
+  }
+/* Any of the 3 cards */
+  .card{ 
+  /* color of the text on the button */
+  color: #7a5c2e;
+  /* background color */
+  background: linear-gradient(#ccb085, #d0b693, #d3bb91, #ecdcb5, #a9732fec);
+   border-top: 2px solid #8f6b32;
+  border-radius: 12px;
+  padding: 15px;
+  overflow:hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  width: 365px; 
+  text-align: center;
+  transition: transform 0.2s;
+  }
+
+  /* image on each card */
+  .card img {
+  width: calc(100% - 20px);  /* accounts for the 10px padding on each side */
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+
+}
+
+  /* Mobile-friendly Responsive layout.*/
+/* for small screen i,e phone */
+@media screen and (min-width: 600px) {
+  .MyWorkContainer {
+    gap: 26px;
+    padding: 18px;
+  }
+
+  .card {
+    max-width: 260px;
+    min-height: 260px;
+  }
+
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+}

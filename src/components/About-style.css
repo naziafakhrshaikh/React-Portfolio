@@ -1,0 +1,105 @@
+/* style sheet for AboutMe.html */
+
+/* Collage container */
+.CollageContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;  /*spacing between cards don’t overlap */
+  padding: 20px;
+  justify-items: center; /* centers cards in their cells */
+  align-items: start; /*prevents stretching*/
+  max-width:1200px; 
+  margin: 0 auto;
+}
+
+/* Base card styling */
+.card {
+  /* color of the text on the button */
+  color: #7a5c2e;
+  /* background color */
+  background: linear-gradient(#ccb085, #d0b693, #d3bb91, #ecdcb5, #a9732fec);
+  border-top: 2px solid #8f6b32;
+  border-radius: 12px;
+  box-shadow: linear-gradient(135deg, #c5a572, #7a5c2e);
+  /* padding: 15px;
+  width: 100%;
+  max-width: 260px; /* keeps collage tidy
+  text-align: center;
+  transition: transform 0.2s; */
+  width: 220px;
+  /* height: 280px;        fixed height for all cards */
+  overflow: hidden;   /*  hides anything that overflows*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* images on each card */
+  .card img {
+  border-radius: 10px;
+  /* padding: 10px; */
+   /* width: auto; */
+  width: 100%;            /* fit card width */
+   /* height: auto; */
+  height: 180px;
+  max-height: 100px;     /* keeps all cards uniform */
+  object-fit: cover;    /* prevents stretching */
+  display: block;        /* removes inline spacing issues */
+  margin: 0 auto;        /* centers image */
+  border-radius: 8px;    
+}
+
+/* cards 5-8 */
+.lang-row,
+.interests,
+.learnerType,
+.goals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* height: 180px; */
+}
+
+/* images on cards 5-8 */
+.lang-row img,
+.interests img,
+.learnerType img,
+.goals img {
+  width: 80px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+} 
+
+/* Text at bottom of each card */
+.card p{
+  font-size:0.8rem;
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+/* Hover effect */
+.contact-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #c5a572, #7a5c2e);
+}
+/* end of buttons style */
+
+
+/* Mobile-friendly Responsive layout.*/
+/* for small screen. i,e phone */
+@media screen and (min-width: 600px) {
+  .CollageContainer {
+    gap: 26px;
+    padding: 18px;
+  }
+
+  .card {
+    max-width: 260px;
+    min-height: 260px;
+  }
+}
