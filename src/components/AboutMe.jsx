@@ -1,9 +1,12 @@
 import './About-style.css'
+import SectionTitle from './SectionTitle'
 
 function AboutMe() {
   return (
     <div>
-      <h2 className="section-title">A Little About Me</h2> 
+      {/* <h2 className="section-title">A Little About Me</h2>  */}
+      {/* Typewriter effect */}
+      <SectionTitle words={['About Me', 'Who Am I?']} />
         <div className="CollageContainer">
         <div className="card card1">
           <img src="/Me.jpg" alt="Me" />

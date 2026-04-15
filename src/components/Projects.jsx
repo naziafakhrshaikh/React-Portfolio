@@ -1,9 +1,12 @@
 import './Projects-style.css'
+import SectionTitle from './SectionTitle'
 
 function Projects() {
   return (
     <>
-        <h2 className="section-title">My Work</h2> 
+        {/* Typewrite effect Title */}
+        <SectionTitle words={['My Work', 'My Projects']} />
+        {/* <h2 className="section-title">My Work</h2>  */}
         <div className="MyWorkContainer">
         <div className="card card1">
           <img src="/GitHub.jpg" alt="GitHubCertificate" />

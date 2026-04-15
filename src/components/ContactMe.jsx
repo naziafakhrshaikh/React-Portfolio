@@ -1,9 +1,12 @@
 import './Contact-style.css'
+import SectionTitle from './SectionTitle'
 
 function ContactMe() {
   return (
     <>
-    <h2 className="section-title">Lets Get In Touch</h2> 
+    {/* <h2 className="section-title">Lets Get In Touch</h2>  */}
+    {/* Typewriter effect */}
+      <SectionTitle words={['Contact Me', "Let's Connect!"]} />
       <div className="contact-container">
         <h1>Contact Me</h1>
         <p>Please fill out this form. I will be notified via email.</p>

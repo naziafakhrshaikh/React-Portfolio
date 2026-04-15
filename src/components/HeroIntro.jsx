@@ -1,10 +1,24 @@
 import './HeroIntro-style.css'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function HeroIntro() {
+  const [text] = useTypewriter({
+  words: [
+    'Welcome to my Portfolio!',
+    'I am a Full Stack Developer!',
+    
+  ],
+  loop: true,
+  delaySpeed: 2000,
+})
   return (
     <>
       <section className="main">
-        <h1> Welcome! </h1>
+        {/* Typewriter effect */}
+        <h1>
+          <span>{text}</span>
+          <Cursor cursorColor="#7a5c2e" />
+        </h1>
         <h2>I'm Nazia Shaikh,
           a 2025 Full Stack JavaScript student at NPower with a strong interest in building practical, user-friendly web applications.
           <br />
