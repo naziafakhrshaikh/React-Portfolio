@@ -19,7 +19,7 @@ function Projects() {
             learned to structure web pages and style them using pure CSS.</p>
         </div>
         <div className="card card3">
-          <img src="/WeatherApp.png" alt="React-Weather-App" />
+          <img src="/React-Weather.png" alt="React-Weather-App" />
           <p>A dynamic weather application built with React that fetches real-time weather data 
             from the OpenWeather API. Search any city in the world to instantly view current 
             temperature, weather conditions, humidity, wind speed, and local time.</p>
