@@ -26,7 +26,8 @@ function Projects() {
         </div>
         <div className="card card4">
           <img src="/DreamStore.png" alt="DreamStore" />
-          <p>A full stack e-commerce application built on the MERN stack 
+          <p>https://capstone-dream-store-1.onrender.com 
+            A full stack e-commerce application built on the MERN stack 
             (MongoDB, Express, React, Node.js). Browse a unique catalog of dreams for sale, add 
             items to a shopping cart, and complete purchases through Stripe payment integration. 
             Deployed live on Render.</p>
